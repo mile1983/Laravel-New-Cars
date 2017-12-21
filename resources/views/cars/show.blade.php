@@ -1,12 +1,9 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-       <title>show</title>
-    </head>
-    <body>
+    @extends('layouts.master')
+    @section('title')
+    single-car
+    @endsection
+    @section('content')
    {{$car->title}}
    {{$car->producer}}
    {{$car->number_of_doors}}
-   
-    </body>
-</html
+   @endsection
