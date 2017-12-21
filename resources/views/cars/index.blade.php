@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-       <title>About</title>
-    </head>
-    <body>
-    @section('Cars')
+
+
+@extends('layouts.master')
+
+
+
+ @section('content')
 
     <h1>Cars</h1>
     <ul>
@@ -20,5 +20,3 @@
         </ul>
      
     @endsection
-    </body>
-</html
