@@ -13,6 +13,7 @@
             <a href ="{{route("single-car",["id"=>$car->id])}}" >
             {{$car->title}}
             
+            
             </a>
             </li>
    
