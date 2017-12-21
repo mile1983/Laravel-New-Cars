@@ -4,6 +4,21 @@
        <title>About</title>
     </head>
     <body>
-      <h1>Index us”</h1>
+    @section('Cars')
+
+    <h1>Cars</h1>
+    <ul>
+            @foreach($cars as $car)
+            <li>
+            <a href ="{{route("single-car",["id"=>$car->id])}}" >
+            {{$car->title}}
+            
+            </a>
+            </li>
+   
+            @endforeach
+        </ul>
+     
+    @endsection
     </body>
 </html
