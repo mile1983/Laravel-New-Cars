@@ -19,3 +19,4 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/cars',['as'=>'all-cars', 'uses' => 'CarsController@index']);
